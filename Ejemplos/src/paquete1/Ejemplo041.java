@@ -9,12 +9,14 @@ package paquete1;
  *
  * @author reroes
  */
-public class Ejemplo04 {
+public class Ejemplo041 {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        
+        String cadena = "";
         // Declarar y generar arreglos en Java
         
         // arreglo de tipo entero
@@ -26,11 +28,13 @@ public class Ejemplo04 {
         // arreglo me da el total de elementos asociados al arreglo
         //              i < 5
         for (int i = 0; i < arreglo1.length; i++) {
-            System.out.printf("Subíndice o Índice %d, con valor %d\n",
-                    i, arreglo1[i]);
+            cadena = String.format("%sSubíndice o Índice %d, con valor "
+                    + "%d\n",
+                    cadena,
+                    i, 
+                    arreglo1[i]);
         }
-        
-        
+        System.out.println(cadena);
     }
 
 }
